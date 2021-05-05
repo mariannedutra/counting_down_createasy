@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+
+  background: linear-gradient(294deg, #025373, #012d76, #008d71, #0f142d);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationBG 60s ease infinite;
+  -moz-animation: AnimationBG 60s ease infinite;
+  -o-animation: AnimationBG 60s ease infinite;
+  animation: AnimationBG 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationBG {
+  0% {
+    background-position: 0% 24%;
+  }
+  50% {
+    background-position: 100% 77%;
+  }
+  100% {
+    background-position: 0% 24%;
+  }
+}
+@-moz-keyframes AnimationBG {
+  0% {
+    background-position: 0% 24%;
+  }
+  50% {
+    background-position: 100% 77%;
+  }
+  100% {
+    background-position: 0% 24%;
+  }
+}
+@-o-keyframes AnimationBG {
+  0% {
+    background-position: 0% 24%;
+  }
+  50% {
+    background-position: 100% 77%;
+  }
+  100% {
+    background-position: 0% 24%;
+  }
+}
+@keyframes AnimationBG {
+  0% {
+    background-position: 0% 24%;
+  }
+  50% {
+    background-position: 100% 77%;
+  }
+  100% {
+    background-position: 0% 24%;
+  }
+}
+
+@keyframes bgchange {
+  0% {
+    background-color: #025373;
+  }
+
+  25% {
+    background-color: #012d76;
+  }
+
+  50% {
+    background-color: #025373;
+  }
+
+  75% {
+    background-color: #008d71;
+  }
+
+  100% {
+    background-color: #0f142d;
+  }
+}
+
+@keyframes drop {
+  0% {
+  }
+  70% {
+    transform: translateY(700px);
+  }
+  100% {
+    transform: translateY(605px);
+  }
+}
+
+@keyframes leaves {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  margin-top: 8vw;
+  width: 100%;
+}
+/*--------------------------------------------------------------
+# SVG Quadrante
+--------------------------------------------------------------*/
+g #Grupo_27 {
+  animation: leaves 3s;
+  animation-delay: -0.5s;
+}
+g #Grupo_26 {
+  animation: leaves 3s;
+  animation-delay: -1s;
+}
+g #Grupo_25 {
+  animation: leaves 3s;
+  animation-delay: -1.5s;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+#main {
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+  width: 467px;
+  height: 278px;
+}
+
+#main .countdown {
+  position: absolute;
+  top: 48%;
+  left: 51.4%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#main .countdown div {
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  margin: 8px;
+  width: 80px;
+}
+
+#main .countdown div h3 {
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0.5rem;
+}
+
+#main .countdown div h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  #main .countdown div {
+    width: 60px;
+    padding: 10px 0;
+    margin: 10px 8px;
+  }
+  #main .countdown div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #main .countdown div h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #main svg {
+    max-width: 350px;
+    max-height: 213px;
+  }
+}
