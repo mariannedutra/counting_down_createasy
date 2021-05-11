@@ -16,46 +16,12 @@
   }
 
   #main svg {
+    margin: 0;
     max-width: 350px;
     max-height: 213px;
   }
   #main .countdown {
-    top: 48%;
-    left: 53%;
-  }
-}
-
-/* TELA MÁXIMA 575PX E MÍNIMA DE 320PX */
-
-@media (min-width: 421px) and (max-width: 500px) {
-  #main .countdown {
-    top: 48%;
-    left: 54%;
-  }
-}
-/* TELA MÁXIMA 575PX E MÍNIMA DE 320PX */
-
-@media (min-width: 320px) and (max-width: 420px) {
-  #main .countdown {
-    top: 48%;
-    left: 55%;
-  }
-}
-
-/* TELA MÁXIMA 1200PX E MÍNIMA DE 872PX */
-
-@media (min-width: 872px) and (max-width: 1200px) {
-  #main .countdown {
-    top: 48%;
-    left: 52%;
-  }
-}
-
-/* TELA MÁXIMA 870PX E MÍNIMA DE 578PX */
-
-@media (min-width: 578px) and (max-width: 870px) {
-  #main .countdown {
-    top: 48%;
-    left: 53.4%;
+    margin-top: -1rem;
+    margin-left: 1rem;
   }
 }

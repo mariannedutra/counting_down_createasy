@@ -44,11 +44,13 @@
 
     <!-- MAIN -->
     <main id="main">
-      <div class="container d-flex flex-column align-items-center">
+      <div class="divQuadrante" id="divQuadrante">
         <svg>
           <use href="#quadrante"></use>
         </svg>
+      </div>
 
+      <div class="container d-flex flex-column align-items-center">
         <div
           class="countdown d-flex justify-content-center"
           data-count="2021/07/01"
@@ -174,7 +176,7 @@
               stroke="#fff"
               stroke-width="2"
             >
-              <rect width="419" height="219" stroke="none" />
+              <rect id="primeirorect" width="419" height="219" stroke="none" />
               <rect x="1" y="1" width="417" height="217" fill="none" />
             </g>
             <rect
