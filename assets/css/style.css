@@ -170,3 +170,84 @@ g #Grupo_25 {
   font-weight: 300;
   margin: 0.5rem;
 }
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 15%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  border-radius: 50px;
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  background: linear-gradient(294deg,#008d71, #ffffff);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationBG 5s ease infinite;
+  -moz-animation: AnimationBG 5s ease infinite;
+  -o-animation: AnimationBG 5s ease infinite;
+  animation: AnimationBG 5s ease infinite;
+}
+ul li span {
+  cursor: crosshair;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px !important;
+}
+ul li:hover span {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+ul li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+ul li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+ul li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+ul li:hover span:nth-child(1) {
+  transform: translate(0, 0);
+  opacity: 0.2;
+}
+ul li:nth-child(1) span {
+  background: #3b5999;
+}
+ul li:nth-child(2) span {
+  background: #55acee;
+}
+ul li:nth-child(3) span {
+  background: #3b5999;
+}
